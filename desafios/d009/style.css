@@ -1,0 +1,28 @@
+body {
+    background-color: rgb(29, 29, 29);
+    color: white;
+    font: 1em Arial;
+}
+
+h1 {
+    text-align: center;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(103, 103, 212);
+    text-decoration: underline;
+}
+
+p.meio {
+    text-align: center;
+}
+
+iframe {
+    display: block;
+    margin: auto;
+}

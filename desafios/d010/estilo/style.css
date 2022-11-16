@@ -55,7 +55,7 @@ header > p {
     font-family: var(--fonte-padrao);
     font-size: 1.2em;
     color: white;
-    max-width: 600px;
+    max-width: 400px;
     padding-right: 10px;
     padding-left: 10px;
     margin: auto;
@@ -81,6 +81,7 @@ nav > a {
 nav > a:hover {
     background-color: var(--cor3);
     color: var(--cor5);
+    margin-right: 20px;
 }
 
 main {

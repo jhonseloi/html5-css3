@@ -56,14 +56,14 @@ article.flores > p {
     margin: 40px 0px 100px 0px;
 }
 
-article.escrituras {
+article.carta {
     background: url(imagens/background002.jpg) center, center no-repeat fixed;
     max-height: 500px;
     padding: 40px 0px 40px 0px;
     margin: 60px 0px 60px 0px;
 }
 
-article.escrituras > p {
+article.carta > p {
     background-color: rgba(0, 0, 0, 0.24);
     color: white;
     max-width: 300px;

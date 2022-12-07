@@ -30,42 +30,42 @@ header p {
     font: 1em var(--fonte-destaque);
 }
 
-main {
+section {
     background-color: white;
     font-family: var(--fonte-padrao);
     font-size: 1.5em;
-    padding: 80px 0px 20px 0px;
-}
-
-main p {
-    padding: 20px;
     line-height: 1.5em;
+    padding: 80px 20px 20px 20px;
 }
 
-article.flores {
-    background: url(imagens/background001.jpg) right, center no-repeat fixed;
+section.flores {
+    background: url(../imagens/background001.jpg) right, center no-repeat fixed;
     max-height: 500px;
     padding: 40px 0px 40px 0px;
     margin: 60px 0px 60px 0px;
 }
 
-article.flores > p {
+section.flores > p {
     background-color: rgba(0, 0, 0, 0.24);
     color: white;
     max-width: 300px;
+    padding: 20px;
     margin: 40px 0px 100px 0px;
 }
 
-article.carta {
-    background: url(imagens/background002.jpg) center, center no-repeat fixed;
+section.carta {
+    background: url(../imagens/background002.jpg) center, center no-repeat fixed;
     max-height: 500px;
     padding: 40px 0px 40px 0px;
     margin: 60px 0px 60px 0px;
 }
 
-article.carta > p {
+section.carta > p {
     background-color: rgba(0, 0, 0, 0.24);
     color: white;
     max-width: 300px;
+    padding: 20px;
     margin: 40px 0px 100px 0px;
 }
+
+footer {}

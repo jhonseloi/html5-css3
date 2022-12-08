@@ -14,58 +14,64 @@
     --fonte-padrao: 'Sriracha', cursive;
 }
 
+html, body {
+    background-color: darkgray;
+    min-height: 100vh;
+}
+
 header {
     background-color: black;
     color: white;
     text-align: center;
-    height: 150px;
-    padding-top: 50px;
 }
 
 header > h1 {
     font: 5em var(--fonte-destaque);
+    padding-top: 50px;
+    font-variant: small-caps;
 }
 
 header p {
-    font: 1em var(--fonte-destaque);
+    font-family: var(--fonte-destaque);
+    padding-bottom: 50px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    line-height: 2em;
+}
+
+section.normal {
     background-color: white;
+    color: black;
     font-family: var(--fonte-padrao);
-    font-size: 1.5em;
-    line-height: 1.5em;
-    padding: 80px 20px 20px 20px;
 }
 
-section.flores {
-    background: url(../imagens/background001.jpg) right, center no-repeat fixed;
-    max-height: 500px;
-    padding: 40px 0px 40px 0px;
-    margin: 60px 0px 60px 0px;
-}
-
-section.flores > p {
-    background-color: rgba(0, 0, 0, 0.24);
+section.imagem {
+    background: black url(../imagens/background001.jpg) right, center no-repeat fixed;
     color: white;
-    max-width: 300px;
-    padding: 20px;
-    margin: 40px 0px 100px 0px;
 }
 
-section.carta {
-    background: url(../imagens/background002.jpg) center, center no-repeat fixed;
-    max-height: 500px;
-    padding: 40px 0px 40px 0px;
-    margin: 60px 0px 60px 0px;
+section.imagem > p {
+    background-color: rgba(0, 0, 0, 0.281);
+    width: 400px;
 }
 
-section.carta > p {
-    background-color: rgba(0, 0, 0, 0.24);
+footer {
+    background-color: black;
     color: white;
-    max-width: 300px;
-    padding: 20px;
-    margin: 40px 0px 100px 0px;
+    text-align: center;
+    padding: 10px;
 }
-
-footer {}

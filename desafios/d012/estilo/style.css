@@ -29,19 +29,19 @@ header {
 }
 
 header > h1 {
-    font: 8vw var(--fonte2);
-    padding-top: 50px;
+    font: 6vw var(--fonte2);
     font-variant: small-caps;
+    padding-top: 50px;
 }
 
-header p {
+header > p {
     padding-bottom: 50px;
 }
 
 a {
     color: white;
-    text-decoration: none;
     font-weight: bolder;
+    text-decoration: none;
 }
 
 a:hover {
@@ -75,7 +75,7 @@ section.imagem {
 }
 
 section.imagem > p {
-    background-color: rgba(0, 0, 0, 0.356);
+    background-color: rgba(0, 0, 0, 0.301);
     display: inline-block;
     text-shadow: 1px 1px 0px black;
     padding: 10px;

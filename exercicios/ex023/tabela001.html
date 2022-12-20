@@ -12,21 +12,21 @@
 
         table {
             width: 300px;
+            height: 300px;
             border-collapse: collapse;
             border: 4px solid black;
-        }
-
-        tr.linha {
-            background-color: darkgray;
         }
 
         td {
             border: 1px solid;
             padding: 8px;
+            text-align: center; <!-- Alinhamento horizontal -->
+            vertical-align: middle; <!-- Alinhamento vertical -->
         }
 
-        td.dado {
-            background-color: greenyellow;
+        .linhaC {
+            text-align: right;
+            vertical-align: bottom;
         }
     </style>
 </head>
@@ -40,31 +40,26 @@
                         TABLE DATA = dados de tabela
     --> 
     <table>
-        <tr class="linha">
+        <tr>
             <td>A1</td>
             <td>B1</td>
-            <td>C1</td>
+            <td class="linhaC">C1</td>
         </tr>
         <tr>
             <td>A2</td>
-            <td class="dado">B2</td>
-            <td>C2</td>
+            <td>B2</td>
+            <td  class="linhaC">C2</td>
         </tr>
-        <tr class="linha">
+        <tr>
             <td>A3</td>
             <td>B3</td>
-            <td>C3</td>
+            <td  class="linhaC">C3</td>
         </tr>
         <tr>
             <td>A4</td>
             <td>B4</td>
-            <td>C4</td>
+            <td  class="linhaC">C4</td>
         </tr>
-        <tr>
-            <td>A5
-            <td>B5
-        <tr>
-            <td>A6
     </table>
 </body>
 </html>

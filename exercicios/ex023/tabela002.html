@@ -12,14 +12,29 @@
     }
 
     table {
-        width: 500px;
+        width: 450px;
         height: 50px;
         border-collapse: collapse;
+    }
+
+    caption {
+        background-color: DARKgrey;
+        font-size: 1.2em;
+        font-weight: bolder;
+        padding: 10px;
     }
 
     thead, tfoot {
         background-color: grey;
         color: white;
+    }
+
+    tbody tr:nth-child(odd) { /*odd = 2n-1*/
+        background-color: white;
+    }
+
+    tbody tr:nth-child(even) { /*even = 2n*/
+        background-color: lightgrey;
     }
 
     th, td {
@@ -30,17 +45,13 @@
     td.numero {
         text-align: right;
     }
-
-    td.posicao {
-        width: 80px;
-        text-align: center;
-    }
 </style>
 <body>
     <h1>Uso de tabelas grandes</h1>
     <!--
         ANATOMIA PARA TABELAS GRANDES
         TABLE
+            CAPTION
             THEAD
                 tr, td, th
             TBODY
@@ -49,154 +60,126 @@
                 tr, td, th
     -->
     <table>
+        <caption>População das Unidades Federativas do Brasil</caption>
         <thead>
             <tr>
-                <th>Posição</th>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td class="posicao">1</td>
                 <td>São Paulo</td>
                 <td class="numero">46.649.132</td>
             </tr>
             <tr>
-                <td class="posicao">2</td>
                 <td>Minas Gerais</td>
                 <td class="numero">21.411.923</td>
             </tr>
             <tr>
-                <td class="posicao">3</td>
                 <td>Rio de Janeiro</td>
                 <td class="numero">17.463.349</td>
             </tr>
             <tr>
-                <td class="posicao">4</td>
                 <td>Bahia</td>
                 <td class="numero">14.985.284</td>
             </tr>
             <tr>
-                <td class="posicao">5</td>
                 <td>Paraná</td>
                 <td class="numero">11.597.484</td>
             </tr>
             <tr>
-                <td class="posicao">6</td>
                 <td>Rio Grande do Sul</td>
                 <td class="numero">11.466.630</td>
             </tr>                      
             <tr>
-                <td class="posicao">7</td>
                 <td>Pernambuco</td>
                 <td class="numero">9.674.793</td>
             </tr>
             <tr>
-                <td class="posicao">8</td>
                 <td>Ceará</td>
                 <td class="numero">9.240.580</td>
             </tr>
             <tr>
-                <td class="posicao">9</td>
                 <td>Pará</td>
                 <td class="numero">8.777.124</td>
             </tr>
             <tr>
-                <td class="posicao">10</td>
                 <td>Santa Catarina</td>
                 <td class="numero">7.338.473</td>
             </tr>            
             <tr>
-                <td class="posicao">11</td>
                 <td>Goiás</td>
                 <td class="numero">7.206.589</td>
             </tr>
             <tr>
-                <td class="posicao">12</td>
                 <td>Maranhão</td>
                 <td class="numero">7.153.262</td>
             </tr>
             <tr>
-                <td class="posicao">13</td>
                 <td>Amazonas</td>
                 <td class="numero">4.269.995</td>
             </tr>
             <tr>
-                <td class="posicao">14</td>
                 <td>Espírito Santo</td>
                 <td class="numero">4.108.508</td>
             </tr>
             <tr>
-                <td class="posicao">15</td>
                 <td>Paraíba</td>
                 <td class="numero">4.059.905</td>
             </tr>
             <tr>
-                <td class="posicao">16</td>
                 <td>Mato Grosso</td>
                 <td class="numero">3.567.234</td>
             </tr>
             <tr>
-                <td class="posicao">17</td>
                 <td>Rio Grande do Norte</td>
                 <td class="numero">3.560.903</td>
             </tr>
             <tr>
-                <td class="posicao">18</td>
                 <td>Alagoas</td>
                 <td class="numero">3.365.351</td>
             </tr>
             <tr>
-                <td class="posicao">19</td>
                 <td>Piauí</td>
                 <td class="numero">3.289.290</td>
             </tr>
             <tr>
-                <td class="posicao">20</td>
                 <td>Distrito Federal</td>
                 <td class="numero">3.094.325</td>
             </tr>
             <tr>
-                <td class="posicao">21</td>
                 <td>Mato Grosso do Sul</td>
                 <td class="numero">2.839.188</td>
             </tr>
             <tr>
-                <td class="posicao">22</td>
                 <td>Sergipe</td>
                 <td class="numero">2.338.474</td>
             </tr>
             <tr>
-                <td class="posicao">23</td>
                 <td>Rondônia</td>
                 <td class="numero">1.815.278</td>
             </tr>
             <tr>
-                <td class="posicao">24</td>
                 <td>Tocantins</td>
                 <td class="numero">1.607.363</td>
             </tr>
             <tr>
-                <td class="posicao">25</td>
                 <td>Acre</td>
                 <td class="numero">906.876</td>
             </tr>
             <tr>
-                <td class="posicao">26</td>
                 <td>Amapá</td>
                 <td class="numero">877.613</td>
             </tr>
             <tr>
-                <td class="posicao">27</td>
                 <td>Roraima</td>
                 <td class="numero">652.713</td>
             </tr>
         </tbody>
         <tfoot>
             <tr>
-                <th></th>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="numero"><strong>213.317.639</strong></td>
             </tr>
         </tfoot>

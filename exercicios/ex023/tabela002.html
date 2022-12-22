@@ -15,6 +15,7 @@
         width: 450px;
         height: 50px;
         border-collapse: collapse;
+        position: relative;
     }
 
     caption {
@@ -27,6 +28,12 @@
     thead, tfoot {
         background-color: grey;
         color: white;
+    }
+
+    thead > tr > th {
+        background-color: grey;
+        position: sticky;
+        top: -1px;
     }
 
     tbody tr:nth-child(odd) { /*odd = 2n-1*/

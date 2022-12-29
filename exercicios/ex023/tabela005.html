@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+</head>
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    caption {
+        background-color: gray;
+        font-size: 1.3em;
+        font-weight: bolder;
+        padding: 8px;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 500px;
+    }
+
+    th, td {
+        text-align: center;
+        border: 1px solid black;
+        padding: 8px;
+    }
+
+    .verde {
+        background-color: lightgreen;
+    }
+
+    .amarelo {
+        background-color: yellow;
+    }
+</style>
+<body>
+    <h1>Exercício de tabela</h1>
+    <table>
+        <caption>Cadastro</caption>
+        <colgroup>
+            <col class="verde">
+            <col class="amarelo" span="2">
+            <col class="verde">
+        </colgroup>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Cláudio</td>
+            <td>M</td>
+            <td>28</td>
+            <td>Médico</td>
+        </tr>
+        <tr>
+            <td>Alberto</td>
+            <td>M</td>
+            <td>30</td>
+            <td>Professor</td>
+        </tr>
+        <tr>
+            <td>Luisa</td>
+            <td>F</td>
+            <td>26</td>
+            <td>Dentista</td>
+        </tr>
+        <tr>
+            <td>Gustavo</td>
+            <td>M</td>
+            <td>25</td>
+            <td>Programador</td>
+        </tr>
+        <tr>
+            <td>Elder</td>
+            <td>M</td>
+            <td>22</td>
+            <td>Designer</td>
+        </tr>
+    </table>
+</body>
+</html>

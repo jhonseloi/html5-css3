@@ -24,7 +24,7 @@ body {
 main {
     position: relative;
     height: 100vh;
-    padding-top: 3vh;
+    padding-top: 2vh;
 }
 
 section#telefone {
@@ -50,13 +50,16 @@ section#redes-sociais {
 }
 
 section#redes-sociais img {
-    height: 60px;
-    width: 60px;
-    border-radius: 20px;
-    margin: 10px;
-    
+    width: 50px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px black;
+    box-sizing: border-box;
+    margin: 12px;
 }
 
 section#redes-sociais img:hover {
-    border: 10px white;
+    border: 2px solid rgba(255, 255, 255, 0.644);
+    box-shadow: 4px 4px 10px black;
+    transform: translate(-5px, -3px);
+    transition: .5s, border .2s;
 }

@@ -18,7 +18,7 @@ html {
 body {
     background: black url(../imagens/back-phone.jpg) no-repeat center center;
     background-size: cover;
-    padding: 20px;
+    padding: 20px 10px;
 }
 
 main {

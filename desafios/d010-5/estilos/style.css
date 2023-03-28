@@ -8,6 +8,11 @@
     font-weight: normal;
 }
 
+::-webkit-scrollbar {
+    height: 0px;
+    width: 0px;
+}
+
 :root {
     --cor0: #ebe5c5;
     --cor1: #83e1ad;
@@ -77,5 +82,11 @@ nav > a:hover {
 
 main {
     background-color: white;
-    width: 70vw;
+    width: 94vw;
+    margin: auto;
+    padding: 20px 15px 40px 15px;
+    margin-bottom: 30px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.253);
 }

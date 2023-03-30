@@ -9,3 +9,69 @@ Tablet: 768px até 992px;
 Desktop: 992px até 1200px.
 Grandes telas: acima de 1200px.
 */
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    main {
+        min-width: 90vw;
+    }
+
+    div#dan-droids {
+        background: url('../imagens/dan-droids.png') no-repeat center center;
+        background-size: cover;
+        height: 300px;
+        width: 100%;
+        margin: auto;
+    }
+    
+    div#irina-blok {
+        background: url('../imagens/irina-blok.jpg') no-repeat;
+        background-size: cover;
+        height: 280px;
+        width: 100%;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    main {
+        min-width: 80vw;
+    }
+    
+    div#dan-droids {
+        background: url('../imagens/dan-droids.png') no-repeat center center;
+        background-size: cover;
+        height: 300px;
+        width: 100%;
+        margin: auto;
+    }
+    
+    div#irina-blok {
+        background: url('../imagens/irina-blok.jpg') no-repeat  center center;
+        background-size: cover;
+        height: 280px;
+        width: 100%;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    main {
+        max-width: 1000px;
+    }
+
+    div#dan-droids {
+        background: url('../imagens/dan-droids.png') no-repeat center center;
+        background-size: cover;
+        height: 300px;
+        width: 100%;
+        margin: auto;
+    }
+    
+    div#irina-blok {
+        background: url('../imagens/irina-blok.jpg') no-repeat center center;
+        background-size: cover;
+        height: 280px;
+        width: 100%;
+        margin: auto;
+    }
+}

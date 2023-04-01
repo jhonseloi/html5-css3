@@ -81,6 +81,10 @@ nav > a:hover {
     transition: 0.2s;
 }
 
+.externo::after {
+    content: '\00A0\1F517';
+}
+
 main {
     background-color: white;
     line-height: 1.5em;
@@ -92,6 +96,18 @@ main {
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.253);
+}
+
+main a {
+    background-color: var(--cor1);
+    color: var(--cor5);
+    font-weight: bolder;
+    text-decoration: none;
+    padding: 2px 6px;
+}
+
+main a:hover {
+    text-decoration: underline;
 }
 
 article h1 {
@@ -118,36 +134,36 @@ article p {
 }
 
 article strong {
-    color: var(--cor4);
+    color: var(--cor5);
 }
 
 div#dan-droids {
-    background: url('../imagens/dan-droids-pq.png') no-repeat;
-    background-size: cover;
+    background: url('../imagens/dan-droids-pq.png') no-repeat center center;
+    background-size: contain;
     height: 530px;
-    width: 450px;
+    width: 100%;
     margin: auto;
 }
 
 div#irina-blok {
-    background: url('../imagens/irina-blok-pq.jpg') no-repeat;
-    background-size: cover;
+    background: url('../imagens/irina-blok-pq.jpg') no-repeat center center;
+    background-size: contain;
     height: 460px;
-    width: 460px;
+    width: 100%;
     margin: auto;
 }
 
 div#bugdroid {
-    background: url('../imagens/bugdroid.png') no-repeat;
-    background-size: cover;
+    background: url('../imagens/bugdroid.png') no-repeat center center;
+    background-size: contain;
     height: 220px;
-    width: 320px;
+    width: 100%;
     margin: auto;
 }
 
 div.video {
     background-color: var(--cor5);
-    margin: 0px -20px 30px -20px;
+    margin: 10px -20px 30px -20px;
     padding: 20px;
     padding-bottom: 58%;
     position: relative;
@@ -185,10 +201,35 @@ aside > p, ul {
     padding: 5px 10px;
 }
 
-aside > ul {
+aside ul {
     list-style-type: '\2714\00A0\00A0';
     list-style-position: inside;
     columns: 2;
 }
 
-footer {}
+aside a {
+    background-color: var(--cor4);
+    color: var(--cor2);
+}
+
+aside a:hover {
+    color: var(--cor1);
+}
+
+footer {
+    background-color: var(--cor5);
+    color: white;
+    font-size: 0.8em;
+    text-align: center;
+    padding: 5px;
+}
+
+footer > a {
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+footer > a:hover {
+    text-decoration: underline;
+}

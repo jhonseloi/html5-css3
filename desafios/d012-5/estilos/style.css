@@ -26,7 +26,6 @@ header {
     text-align: center;
     height: 100px;
     padding: 40px 0px 20px 0px;
-    margin-bottom: 60px;
 }
 
 header > h1 {
@@ -47,13 +46,14 @@ header a:hover {
 }
 
 main {
+    background-color: white;
     font-family: var(--fonte-destaque);
     font-size: 1.2em;
     line-height: 2em;
-    padding: 0px 30px;
+    padding: 60px 30px 100px 30px;
 }
 
-main p {
+section.normal > p {
     margin-bottom: 30px;
 }
 
@@ -97,7 +97,6 @@ footer {
     font-family: var(--fonte-padrao);
     text-align: center;
     padding: 10px;
-    margin-top: 100px;
 }
 
 footer a {

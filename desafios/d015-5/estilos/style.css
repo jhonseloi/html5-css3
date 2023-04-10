@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+/*
+Pequenas telas: até 600px; 
+Celular: 600px até 768px; 
+Tablet: 768px até 992px; 
+Desktop: 992px 1200px; 
+Grandes telas: acima de 1200px. 
+*/
+
+/*
+Paleta de cores:
+Verde -> #49a09d
+Roxo -> #5f2c82
+*/
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #5f2c82;
+    width: 100vw;
+    height: 100vw;
+}
+
+section {
+    position: relative;
+}
+
+section#login {
+    background-color: white;
+    width: 250px;
+    height: 520px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.39);
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+div#imagem {
+    background: black url('../imagens/metal.jpg') no-repeat left bottom;
+    background-size: cover;
+    width: 100%;
+    height: 200px;
+}
+
+div#formulario {
+    padding: 0px 10px;
+}
+
+div#formulario > h1 {
+    text-align: center;
+    font-size: 1.5em;
+    padding: 10px;
+}
+
+div#formulario > p {
+    font-size: 0.8em;
+}

@@ -1,14 +1,6 @@
 @charset "UTF-8";
 
 /*
-Pequenas telas: até 600px; 
-Celular: 600px até 768px; 
-Tablet: 768px até 992px; 
-Desktop: 992px 1200px; 
-Grandes telas: acima de 1200px. 
-*/
-
-/*
 Paleta de cores:
 Verde -> #49a09d
 Roxo -> #5f2c82
@@ -63,4 +55,12 @@ div#formulario > h1 {
 
 div#formulario > p {
     font-size: 0.8em;
+}
+
+form > div.caixa > label {
+    display: none;
+}
+
+form > input {
+    display: block;
 }

@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+/* Todas as demais mídias */
+
+/* Typical Device Breakpoint
+-------------------------------
+Pequenas telas: até 600px;
+Celular: 600px até 768px;
+Tablet: 768px até 992px;
+Desktop: 992px até 1200px.
+Grandes telas: acima de 1200px.
+-------------------------------
+* Dados retirados da W3S em 17/08/2022, por isso podem estar defasados com o passar do tempo.
+
+*/
+
+@media print { /* IMPRESSÃO */
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+    
+    body {
+        background-image: url(../imagens/icon-print.png); /* desnecessário */
+    }
+
+    main {
+        border: 2px solid black;
+        width: 90vw;
+    }
+
+    main h1 {
+        text-shadow: none;
+        color: black;      
+    }
+
+    main::after {
+        content: 'Essa impressão foi feita através do site www.mediaquery.com.br';
+        text-decoration: overline;
+    }
+
+    img#phone { display: none; }
+    img#print { display: block; }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) { /* TABLET */
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+
+    main {
+        width: 450px;
+    }
+
+    img#phone { display: none; }
+    img#tablet { display: block; }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) { /* DESKTOP */
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+
+    main {
+        width: 500px;
+    }
+
+    img#phone { display: none; }
+    img#pc { display: block; }
+}
+
+@media screen and (min-width: 1200px) { /* GRANDES TELAS */
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    main {
+        width: 600px;
+    }
+
+    img#phone { display: none; }
+    img#tv { display: block; }
+}
